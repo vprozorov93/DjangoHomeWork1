@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Рабочая дирректория</title>
+</head>
+<body>
+    <table border="1">
+        <caption>Файлы рабочего каталога</caption>
+        <tr>
+            <th>Наименование</th>
+            <th>Тип</th>
+            <th>Размер</th>
+            <th>Дата создания</th>
+        </tr>
+    {% for name, data in table.items %}
+        <tr><td>{{name}}</td>
+        {%for el in data %}
+            <td>{{el}}</td>
+        {% endfor %}
+        </tr>>
+    {% endfor %}
+    </table>
+</body>
+</html>
